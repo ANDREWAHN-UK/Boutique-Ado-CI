@@ -84,7 +84,9 @@ a.category-badge > span.badge:hover {
 }
 
 /* this is the scroll to top button, seen on products.html */
-
+/* also the links on the shopping bag */
+.update-link,
+.remove-item,
 .btt-button{
     height: 42px;
     width: 42px;
