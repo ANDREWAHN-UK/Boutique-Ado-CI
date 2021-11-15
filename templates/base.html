@@ -147,7 +147,9 @@
 
     {% if messages %}
     <div class="message-container">
-
+            {% for message in messages %}
+                {% include 'includes/toasts/toast_success.html' %}
+            {% endfor %}
     </div>
     {% endif %}
 
@@ -158,6 +160,11 @@
     {% endblock %}
 
     {% block postload_js %}
+
+    <!-- placing this script inside base.html ensures it can be accessed accross the website -->
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
 
 </body>
