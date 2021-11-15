@@ -96,8 +96,24 @@ a.category-badge > span.badge:hover {
 
 /* makes it so cursor changes to hand symbol when user hovers over button */
 .update-link,
-.remove-item,.btt-link {
+.remove-item,
+.btt-link {
     cursor: pointer;
+}
+/* ----------------------------------Bootstrap toast settings */
+.message-container{
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 100;
+}
+
+.custom-toast{
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 /* -------------------------------- Media Queries */
 
